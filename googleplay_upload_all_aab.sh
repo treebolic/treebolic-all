@@ -3,6 +3,15 @@
 source define_colors.sh
 source define_confirm.sh
 
+case "$1" in
+-y)
+        shift
+	;;
+*)
+        doconfirm=true
+	;;
+esac
+
 RELEASE_NAME="$1"
 if [ -z "${RELEASE_NAME}" ]; then
 	V=`./find-version.sh`
@@ -22,9 +31,10 @@ for aab in ${AABS}; do
 	package=${PACKAGES_BY_KEY[${aab}]}
 	flavor=${FLAVORS_BY_KEY[${aab}]}
 	file=${DIR}/${aab}${flavor}-release.aab
-	if ! confirm "${package}${flavor}"; then
+	if [[ "$doconfirm" != ""  ]] && ! confirm "${package}${flavor}"; then
 	        continue
 	fi
+	
 	if [ ! -e "${file}" ]; then
 		echo -e "${B}${aab}${Y}${flavor} ${M}${package} ${R}${file}${Z}"
 	else
