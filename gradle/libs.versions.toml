@@ -1,4 +1,10 @@
 [versions]
+versionCode="131"
+versionName="7.131"
+minSdk = "23"
+targetSdk = "37"
+compileSdk = "37"
+
 agp = "9.2.0"
 kotlin = "2.3.21"
 
