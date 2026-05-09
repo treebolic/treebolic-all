@@ -1,7 +1,7 @@
 [versions]
-versionCode="131"
-versionName="7.131"
-minSdk = "23"
+versionCode = "131"
+versionName = "7.131"
+minSdk = "24"
 targetSdk = "37"
 compileSdk = "37"
 
@@ -49,11 +49,13 @@ treebolic-provider-xml-dom = { group = "io.github.treebolic", name = "provider-x
 treebolic-provider-xml-sax = { group = "io.github.treebolic", name = "provider-xml-sax", version.ref = "treebolic" }
 treebolic-provider-text-indent-tree = { group = "io.github.treebolic", name = "provider-text-indent-tree", version.ref = "treebolic" }
 treebolic-provider-text-indent = { group = "io.github.treebolic", name = "provider-text-indent", version.ref = "treebolic" }
-treebolic-provider-text-pair= { group = "io.github.treebolic", name = "provider-text-pair", version.ref = "treebolic" }
+treebolic-provider-text-pair = { group = "io.github.treebolic", name = "provider-text-pair", version.ref = "treebolic" }
 treebolic-provider-graphviz = { group = "io.github.treebolic", name = "provider-graphviz", version.ref = "treebolic" }
 treebolic-provider-files = { group = "io.github.treebolic", name = "provider-files", version.ref = "treebolic" }
 treebolic-provider-sql-generic = { group = "io.github.treebolic", name = "provider-sql-generic", version.ref = "treebolic" }
 treebolic-provider-owl-sax = { group = "io.github.treebolic", name = "provider-owl-sax", version.ref = "treebolic" }
+treebolic-provider-owl-jena = { group = "io.github.treebolic", name = "provider-owl-jena", version.ref = "treebolic" }
+treebolic-provider-owl-api = { group = "io.github.treebolic", name = "provider-owl-owlapi", version.ref = "treebolic" }
 
 kwi = { group = "io.github.oewntk", name = "kwi", version.ref = "kwi" }
 
