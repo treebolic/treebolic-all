@@ -21,13 +21,13 @@ treebolicSumo
 treebolicContacts 
 treebolicWordNet treebolicWordNetForAmazon treebolicWordNetForGoogle"
 for a in $apps; do
-	echo -e "${Y}${a}${E}"
+	echo -e "${Y}${a}${Z}"
 	./gradlew ${a}:bundleRelease 
 done
 
 apps_prod="treebolicWordNetIAB treebolicRoyalsIAB"
 for a in $apps_prod; do
-	echo -e "${Y}${a}${E}"
+	echo -e "${Y}${a}${Z}"
 	./gradlew ${a}:bundleProductionRelease
 done
 
