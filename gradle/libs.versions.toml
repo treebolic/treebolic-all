@@ -5,28 +5,29 @@ minSdk = "24"
 targetSdk = "37"
 compileSdk = "37"
 
-agp = "9.2.1"
-kotlin = "2.3.21"
+agp = "9.4.0"
+kotlin = "2.4.20"
 
 kwi = "3.0.0"
-treebolic = "4.2-0"
+treebolic = "4.2-1"
+oewn = "1.2026-1"
 
-google-services = "4.4.4"
+google-services = "4.5.0"
 desugar = "2.1.5"
 
-core-ktx = "1.18.0"
+core-ktx = "1.19.0"
 annotation = "1.10.0"
 
-appcompat = "1.7.1"
+appcompat = "1.8.0"
 activity = "1.13.0"
-lifecycle = "2.10.0"
+lifecycle = "2.11.0"
 recyclerview = "1.4.0"
-webkit = "1.16.0"
-material = "1.13.0"
-constraintlayout = "2.2.1"
+webkit = "1.17.0"
+material = "1.14.0"
+constraintlayout = "2.2.2"
 preference = "1.2.1"
-billing = "8.3.0"
-ads = "25.2.0"
+billing = "9.1.0"
+ads = "25.4.0"
 ads-firebase = "23.6.0"
 compress = "1.28.0"
 
@@ -56,6 +57,8 @@ treebolic-provider-sql-generic = { group = "io.github.treebolic", name = "provid
 treebolic-provider-owl-sax = { group = "io.github.treebolic", name = "provider-owl-sax", version.ref = "treebolic" }
 treebolic-provider-owl-jena = { group = "io.github.treebolic", name = "provider-owl-jena", version.ref = "treebolic" }
 treebolic-provider-owl-api = { group = "io.github.treebolic", name = "provider-owl-owlapi", version.ref = "treebolic" }
+
+oewn.wn31 = { group = "io.github.treebolic", name = "oewn-wn31", version.ref = "oewn" }
 
 kwi = { group = "io.github.oewntk", name = "kwi", version.ref = "kwi" }
 
