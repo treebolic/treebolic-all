@@ -58,7 +58,7 @@ treebolic-provider-owl-sax = { group = "io.github.treebolic", name = "provider-o
 treebolic-provider-owl-jena = { group = "io.github.treebolic", name = "provider-owl-jena", version.ref = "treebolic" }
 treebolic-provider-owl-api = { group = "io.github.treebolic", name = "provider-owl-owlapi", version.ref = "treebolic" }
 
-oewn.wn31 = { group = "io.github.treebolic", name = "oewn-wn31", version.ref = "oewn" }
+oewn-wn31 = { group = "io.github.treebolic", name = "oewn-wn31", version.ref = "oewn" }
 
 kwi = { group = "io.github.oewntk", name = "kwi", version.ref = "kwi" }
 
