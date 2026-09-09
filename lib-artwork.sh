@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Copyright (c) 2023. Bernard Bou
+# Copyright (c) 2026. Bernard Bou
 #
 
 RED='\u001b[31m'

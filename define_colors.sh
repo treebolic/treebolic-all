@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# Copyright (c) 2026. Bernard Bou
+#
+
 # ANSI COLORS
 
 export BLACK='\u001b[30m'

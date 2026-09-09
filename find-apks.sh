@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# Copyright (c) 2026. Bernard Bou
+#
+
 source define_colors.sh
 
 RELEASE=build/outputs/bundle/release

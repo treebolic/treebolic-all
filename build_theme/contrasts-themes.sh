@@ -1,5 +1,9 @@
 #!/usr/bin/bash
 
+#
+# Copyright (c) 2026. Bernard Bou
+#
+
 source define_colors.sh
 source define_data.sh
 

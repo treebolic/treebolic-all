@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Copyright (c) 2024. Bernard Bou.
+# Copyright (c) 2026. Bernard Bou
 #
 
 # C O L O R S

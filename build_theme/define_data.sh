@@ -1,5 +1,9 @@
 #!/usr/bin/bash
 
+#
+# Copyright (c) 2026. Bernard Bou
+#
+
 declare -A app2path
 export app2path=(
 [contacts]=TreebolicContacts/treebolicContacts/contacts

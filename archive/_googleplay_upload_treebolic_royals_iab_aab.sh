@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# Copyright (c) 2026. Bernard Bou
+#
+
 RELEASE_NAME="$1"
 if [ -z "${RELEASE_NAME}" ]; then
 	V=`./find-version.sh`
