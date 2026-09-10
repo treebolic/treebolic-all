@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2026. Bernard Bou
+ */
+
 apply plugin: 'com.android.library'
 
 android {

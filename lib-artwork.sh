@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Copyright (c) 2023. Bernard Bou
+# Copyright (c) 2026. Bernard Bou
 #
 
 RED='\u001b[31m'
@@ -49,7 +49,7 @@ function make_png(){
 		if [ -e "${svg}" ]; then
 			local png="${svg%.svg}${suffix}.png"
 			echo -e -n "${svg} -> ${d}/${png} @ ${BLUE}${aspect} ${r}${RESET}"
-			inkscape ${svg} --export-png=${d}/${png} -${aspect} ${r} > /dev/null 2> /dev/null
+			inkscape ${svg} --export-type="png" --export-filename==${d}/${png} -${aspect} ${r} > /dev/null 2> /dev/null
 			if [ -e "${d}/${png}" ]; then
 				echo -e " ${GREEN}OK${RESET}"
 			else

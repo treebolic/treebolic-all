@@ -1,3 +1,7 @@
+#
+# Copyright (c) 2026. Bernard Bou
+#
+
 #/bin/bash
 
 dir_eclipse=/opt/devel/treebolic/current

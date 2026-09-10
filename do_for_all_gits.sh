@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#
+# Copyright (c) 2024. Bernard Bou.
+#
+
+set -e
+
+export R='\u001b[31m'
+export G='\u001b[32m'
+export B='\u001b[34m'
+export Y='\u001b[33m'
+export M='\u001b[35m'
+export C='\u001b[36m'
+export Z='\u001b[0m'
+
+for d in $(./find-git-repos.sh); do
+	echo -e "${Y}${d}${Z}"
+	pushd "${d}" > /dev/null
+	l="git $*"
+	eval $l
+	popd > /dev/null
+done
+
+# ${m} is instantiated as module name
+# ${m} must be protected by single quotes on the command line
+#./git_all.sh remote set-url origin 'https://oewntk@github.com/oewntk/${m}.git'

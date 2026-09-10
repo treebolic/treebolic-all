@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+
+#
+# Copyright (c) 2026. Bernard Bou
+#
+
+for f in *.gpa; do
+        d=$(dirname "$filepath")
+        b="${f%.*}"
+        #echo "$f (as $d $b) -> $d/$b.gpl"
+        python3 convert_gpa.py "$f" "$d/$b.txt"
+done
+

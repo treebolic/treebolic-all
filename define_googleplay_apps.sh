@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# Copyright (c) 2026. Bernard Bou
+#
+
 export packages_treebolic="
 	org.treebolic
 "

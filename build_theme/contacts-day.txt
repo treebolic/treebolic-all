@@ -1,0 +1,4 @@
+#8DA195  Teal
+#004238  Dark blue green
+#DC8C00  Yellowish orange
+#208C82  Topaz

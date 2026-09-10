@@ -1,0 +1,35 @@
+
+<!--
+  ~ Copyright (c) 2026. Bernard Bou
+  -->
+
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>#FFBB33,#F57C00,#F59E41,#C62828</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+div#colors div{float: left; width: 64px; height: 64px; margin: 2px; text-align: center; font-size: 12px; font-family: Arial, Helvetica, sans-serif}
+div#colors div span{font-weight: bold; cursor: pointer}
+div#colors div span:hover{text-decoration: underline}
+html{}
+input{margin-left: 1em;}
+</style></head>
+<body>
+<div>#FFBB33,#F57C00,#F59E41,#C62828</div>
+<br/>
+<div id="colors"><table>
+<tr><td>custom</td><td>/</td><td>surface</td><td>1.61:1</td><td>FAIL</td><td><div style="background-color:#FFBB33; color:#FFF8F3"><span>#FFBB33</span></div></td><td><div style="background-color:#FFF8F3; color:#FFBB33"><span>#FFF8F3</span></div></td></tr>
+<tr><td>onSurface</td><td>/</td><td>surface</td><td>16.28:1</td><td>PASS</td><td><div style="background-color:#201B12; color:#FFF8F3"><span>#201B12</span></div></td><td><div style="background-color:#FFF8F3; color:#201B12"><span>#FFF8F3</span></div></td></tr>
+<tr><td>primary</td><td>/</td><td>surface</td><td>6.15:1</td><td>PASS</td><td><div style="background-color:#964900; color:#FFF8F3"><span>#964900</span></div></td><td><div style="background-color:#FFF8F3; color:#964900"><span>#FFF8F3</span></div></td></tr>
+<tr><td>secondary</td><td>/</td><td>surface</td><td>6.12:1</td><td>PASS</td><td><div style="background-color:#8C5000; color:#FFF8F3"><span>#8C5000</span></div></td><td><div style="background-color:#FFF8F3; color:#8C5000"><span>#FFF8F3</span></div></td></tr>
+<tr><td>tertiary</td><td>/</td><td>surface</td><td>6.13:1</td><td>PASS</td><td><div style="background-color:#B91D20; color:#FFF8F3"><span>#B91D20</span></div></td><td><div style="background-color:#FFF8F3; color:#B91D20"><span>#FFF8F3</span></div></td></tr>
+<tr><td>onCustom</td><td>/</td><td>surface</td><td>11.38:1</td><td>PASS</td><td><div style="background-color:#4B3200; color:#FFF8F3"><span>#4B3200</span></div></td><td><div style="background-color:#FFF8F3; color:#4B3200"><span>#FFF8F3</span></div></td></tr>
+<tr><td>onSurface</td><td>/</td><td>custom</td><td>10.11:1</td><td>PASS</td><td><div style="background-color:#201B12; color:#FFBB33"><span>#201B12</span></div></td><td><div style="background-color:#FFBB33; color:#201B12"><span>#FFBB33</span></div></td></tr>
+<tr><td>primary</td><td>/</td><td>custom</td><td>3.82:1</td><td>FAIL</td><td><div style="background-color:#964900; color:#FFBB33"><span>#964900</span></div></td><td><div style="background-color:#FFBB33; color:#964900"><span>#FFBB33</span></div></td></tr>
+<tr><td>secondary</td><td>/</td><td>custom</td><td>3.80:1</td><td>FAIL</td><td><div style="background-color:#8C5000; color:#FFBB33"><span>#8C5000</span></div></td><td><div style="background-color:#FFBB33; color:#8C5000"><span>#FFBB33</span></div></td></tr>
+<tr><td>tertiary</td><td>/</td><td>custom</td><td>3.81:1</td><td>FAIL</td><td><div style="background-color:#B91D20; color:#FFBB33"><span>#B91D20</span></div></td><td><div style="background-color:#FFBB33; color:#B91D20"><span>#FFBB33</span></div></td></tr>
+<tr><td>onCustom</td><td>/</td><td>custom</td><td>7.07:1</td><td>PASS</td><td><div style="background-color:#4B3200; color:#FFBB33"><span>#4B3200</span></div></td><td><div style="background-color:#FFBB33; color:#4B3200"><span>#FFBB33</span></div></td></tr>
+</table></div>
+<script>
+function selectText(element){ if (document.selection){ var range = document.body.createTextRange(); range.moveToElementText(element); range.select(); }else if (window.getSelection){ var range = document.createRange(); range.selectNode(element); window.getSelection().addRange(range); } }
+document.getElementById('colors').addEventListener('click', function(event){ if (event.target.tagName.toLowerCase() == 'span'){ event.preventDefault(); selectText(event.target); document.execCommand('copy'); }});
+</script></body></html>
+

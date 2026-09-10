@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024. Bernard Bou <1313ou@gmail.com>
+ * Copyright (c) 2026. Bernard Bou
  */
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
@@ -15,14 +15,6 @@ buildscript {
 }
 
 allprojects {
-
-    ext {
-        set("versionCode", 128)
-        set("versionName", "7.128")
-        set("minSdk", 23)
-        set("targetSdk", 36)
-        set("compileSdk", 36)
-    }
 
     gradle.projectsEvaluated {
         tasks.withType<JavaCompile> {

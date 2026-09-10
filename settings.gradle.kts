@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024. Bernard Bou <1313ou@gmail.com>
+ * Copyright (c) 2026. Bernard Bou
  */
 
 pluginManagement {
@@ -18,7 +18,9 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
+    @Suppress("UnstableApiUsage")
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    @Suppress("UnstableApiUsage")
     repositories {
         google()
         mavenLocal()

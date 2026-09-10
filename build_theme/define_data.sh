@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+#
+# Copyright (c) 2026. Bernard Bou
+#
+
+declare -A app2path
+export app2path=(
+[contacts]=TreebolicContacts/treebolicContacts/contacts
+[royals]=TreebolicRoyals/treebolicRoyalsLib/royals
+[plants]=TreebolicPlants/treebolicPlants/plants
+[fungi]=TreebolicFungi/treebolicFungi/fungi
+[sumo]=TreebolicSumo/treebolicSumo/sumo
+[wordnet]=TreebolicServices/treebolicWordNetServices/wordnet-services
+[owl]=TreebolicServices/treebolicOwlServices/owl-services
+[files]=TreebolicServices/treebolicFilesServices/file-services
+)
+export apps="${!app2path[@]}"
