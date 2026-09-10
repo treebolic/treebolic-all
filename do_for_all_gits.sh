@@ -14,11 +14,8 @@ export M='\u001b[35m'
 export C='\u001b[36m'
 export Z='\u001b[0m'
 
-gits=$(./find-git-repos.sh)
-
-for d in ${gits}; do
-	m=${d#Treebolic}
-	echo -e "${Y}${m}${Z}"
+for d in $(./find-git-repos.sh); do
+	echo -e "${Y}${d}${Z}"
 	pushd "${d}" > /dev/null
 	l="git $*"
 	eval $l

@@ -19,5 +19,5 @@ TreebolicPlants
 TreebolicFungi
 TreebolicServices
 TreebolicWordNet"
-echo $DIRS
+echo "$DIRS"
 
