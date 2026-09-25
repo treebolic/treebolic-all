@@ -14,9 +14,7 @@ HERE
 **/androidpublisher.dat
 **/client_secrets.json
 **/keystore
-**/*keystore
-**/keystore.properties
-**/keystore_upload.properties
+**/*keystore*
 **/google-services.json
 **/*.iml
 **.iml
